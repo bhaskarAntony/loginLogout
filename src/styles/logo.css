@@ -1,0 +1,15 @@
+.logo-brand{
+    font-size: 2em;
+}
+@media (max-width:528px){
+    .logo-brand{
+        font-size: 1.5em;
+    }
+}
+img{
+    width: 60px;
+    height: 60px;
+}
+.logo{
+    text-align: center;
+}
