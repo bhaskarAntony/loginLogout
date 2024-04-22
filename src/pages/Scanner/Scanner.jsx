@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import QrReader from 'react-qr-scanner';
 import { useNavigate } from 'react-router-dom';
+import './style.css'
 
 function Scanner() {
     const [result, setResult] = useState('');
@@ -18,7 +19,7 @@ function Scanner() {
     };
 
     return (
-        <div>
+        <div className='scan'>
             <QrReader
                 delay={300}
                 onError={handleError}
@@ -26,6 +27,7 @@ function Scanner() {
                 style={{ width: '100%' }}
                 facingMode={'environment'} // Set facingMode to 'environment' to use the back camera
             />
+            <div className="scan-inside"></div>
         </div>
     );
 }
